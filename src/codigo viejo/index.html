@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dibujo con teclas</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_title">
+        <p class="content">
+          Espaciado de lineas:
+          <input type="number" name="espace" id="espace" value="1" style="font-size: 15px;"/>
+          Grosor de la linea:
+          <input type="number" name="broad" id="broad" value="1" style="font-size: 15px;"/>
+          Color de la linea:
+          <input type="color" name="color" id="color" />
+          <button type="button" id="cleanCanvas">Borrar</button>
+        </p>
+      </div>
+      <div class="container_canvas_and_buttons">
+        <div class="conteiner_canvas">
+          <canvas width="800px" height="550px" id="drawing_area"></canvas>
+        </div>
+      </div>
+      <script src="./codigo.js"></script>
+    </div>
+  </body>
+</html>
