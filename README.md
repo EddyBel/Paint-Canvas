@@ -3,4 +3,4 @@
 Interactive drawing with canvas.
 
 
-![Preview de proyecto](https://raw.githubusercontent.com/EddyBel/paint-canvas.github.io/main/info/preview.png)
+![Preview de proyecto](https://raw.githubusercontent.com/EddyBel/Paint-Canvas/main/info/preview.png)
