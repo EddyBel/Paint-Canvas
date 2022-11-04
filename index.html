@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <link rel="shortcut icon" href="./public/logo.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dibujo con teclas</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dibujo con teclas</title>
-  <link rel="stylesheet" href="./src/style.css">
-</head>
-
-<body>
-  <div class="container">
-    <!-- Seccion de titulos -->
-    <div class="nav-bar">
-      <img src="./src/assets/logo.png" class="logo" />
-      <h2>Dibujo en canvas</h2>
-    </div>
-    <!-- Seccion de dibujo -->
-    <section class="box-paint">
-      <!-- Inputs relacionados al canvas -->
-      <section class="seccion-inputs">
-        <!-- Inputs -->
-        <div class="container-input one">
-          <label class="title-input one">Espaciado</label>
-          <input min="1" max="100" type="number" name="espace" id="espace" value="1" class="input one" />
-        </div>
-        <div class="container-input two">
-          <label class="title-input two">Grosor</label>
-          <input min="1" max="100" type="number" name="broad" id="broad" value="1" class="input two" />
-        </div>
-        <div class="container-input tree">
-          <label class="title-input tree">Color</label>
-          <input type="color" name="color" id="color" class="input-color" />
-        </div>
-        <button type="button" id="cleanCanvas">Borrar</button>
-      </section>
-      <!-- Canvas -->
-      <div class="conteiner_canvas">
-        <canvas width="800px" height="550px" id="drawing_area"></canvas>
+  <body>
+    <div class="container">
+      <!-- Seccion de titulos -->
+      <div class="nav-bar">
+        <img src="./src/assets/logo.png" class="logo" />
+        <h2>Dibujo en canvas</h2>
       </div>
-    </section>
-  </div>
-  <script src="./src/codigo.js"></script>
-  <script src="./src/resize.js"></script>
-</body>
-
+      <!-- Seccion de dibujo -->
+      <section class="box-paint">
+        <!-- Inputs relacionados al canvas -->
+        <section class="seccion-inputs">
+          <!-- Inputs -->
+          <div class="container-input one">
+            <label class="title-input one">Espaciado</label>
+            <input
+              min="1"
+              max="100"
+              type="number"
+              name="espace"
+              id="espace"
+              value="1"
+              class="input one"
+            />
+          </div>
+          <div class="container-input two">
+            <label class="title-input two">Grosor</label>
+            <input
+              min="1"
+              max="100"
+              type="number"
+              name="broad"
+              id="broad"
+              value="1"
+              class="input two"
+            />
+          </div>
+          <div class="container-input tree">
+            <label class="title-input tree">Color</label>
+            <input type="color" name="color" id="color" class="input-color" />
+          </div>
+          <button type="button" id="cleanCanvas">Borrar</button>
+        </section>
+        <!-- Canvas -->
+        <div class="conteiner_canvas">
+          <canvas width="800px" height="550px" id="drawing_area"></canvas>
+        </div>
+      </section>
+    </div>
+    <script src="./src/codigo.js"></script>
+    <script src="./src/resize.js"></script>
+  </body>
 </html>
